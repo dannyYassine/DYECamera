@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B56890561C318800006A5ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56890551C318800006A5ABC /* AppDelegate.swift */; };
-		B56890581C318800006A5ABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56890571C318800006A5ABC /* ViewController.swift */; };
 		B568905B1C318800006A5ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56890591C318800006A5ABC /* Main.storyboard */; };
 		B568905D1C318800006A5ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B568905C1C318800006A5ABC /* Assets.xcassets */; };
 		B56890601C318800006A5ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B568905E1C318800006A5ABC /* LaunchScreen.storyboard */; };
 		B568906B1C318800006A5ABC /* DYECameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568906A1C318800006A5ABC /* DYECameraTests.swift */; };
 		B56890761C318800006A5ABC /* DYECameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56890751C318800006A5ABC /* DYECameraUITests.swift */; };
+		B56890841C318872006A5ABC /* DYECameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56890831C318872006A5ABC /* DYECameraButton.swift */; };
+		B56890861C318A3B006A5ABC /* DYECameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56890851C318A3B006A5ABC /* DYECameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		B56890521C318800006A5ABC /* DYECamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYECamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56890551C318800006A5ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B56890571C318800006A5ABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B568905A1C318800006A5ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B568905C1C318800006A5ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B568905F1C318800006A5ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		B56890711C318800006A5ABC /* DYECameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYECameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56890751C318800006A5ABC /* DYECameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYECameraUITests.swift; sourceTree = "<group>"; };
 		B56890771C318800006A5ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B56890831C318872006A5ABC /* DYECameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYECameraButton.swift; sourceTree = "<group>"; };
+		B56890851C318A3B006A5ABC /* DYECameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYECameraViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,13 @@
 		B56890541C318800006A5ABC /* DYECamera */ = {
 			isa = PBXGroup;
 			children = (
+				B56890851C318A3B006A5ABC /* DYECameraViewController.swift */,
 				B56890551C318800006A5ABC /* AppDelegate.swift */,
-				B56890571C318800006A5ABC /* ViewController.swift */,
 				B56890591C318800006A5ABC /* Main.storyboard */,
 				B568905C1C318800006A5ABC /* Assets.xcassets */,
 				B568905E1C318800006A5ABC /* LaunchScreen.storyboard */,
 				B56890611C318800006A5ABC /* Info.plist */,
+				B56890831C318872006A5ABC /* DYECameraButton.swift */,
 			);
 			path = DYECamera;
 			sourceTree = "<group>";
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56890581C318800006A5ABC /* ViewController.swift in Sources */,
+				B56890841C318872006A5ABC /* DYECameraButton.swift in Sources */,
+				B56890861C318A3B006A5ABC /* DYECameraViewController.swift in Sources */,
 				B56890561C318800006A5ABC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

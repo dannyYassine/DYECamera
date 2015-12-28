@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DYECameraViewController" customModule="DYECamera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJA-Yi-CZD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irR-qm-4eK" customClass="DYECameraButton" customModule="DYECamera" customModuleProvider="target">
+                                <rect key="frame" x="250" y="480" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aBy-bB-yfK"/>
+                                    <constraint firstAttribute="width" constant="100" id="lxx-Jl-POv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="startRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHY-KL-2AZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahI-BI-Kkb">
+                                <rect key="frame" x="530" y="20" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4vR-Ug-EXP"/>
+                                    <constraint firstAttribute="width" constant="60" id="Dsr-sU-EXP"/>
+                                </constraints>
+                                <state key="normal" title="TOGGLE"/>
+                                <connections>
+                                    <action selector="toggleCameraButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Rb-wM-F2l"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LJA-Yi-CZD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="22p-0C-AgE"/>
+                            <constraint firstAttribute="trailing" secondItem="ahI-BI-Kkb" secondAttribute="trailing" constant="10" id="27v-Zz-tU8"/>
+                            <constraint firstItem="ahI-BI-Kkb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8So-kE-ZTa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LJA-Yi-CZD" secondAttribute="bottom" id="BPa-36-8x5"/>
+                            <constraint firstAttribute="trailing" secondItem="LJA-Yi-CZD" secondAttribute="trailing" id="N8r-OR-5jT"/>
+                            <constraint firstItem="LJA-Yi-CZD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R5E-hN-to2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="irR-qm-4eK" secondAttribute="bottom" constant="20" id="cR8-k4-EDM"/>
+                            <constraint firstItem="irR-qm-4eK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPE-2h-vYn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="irR-qm-4eK" id="wuD-98-wp4"/>
+                        <outlet property="previewCameraView" destination="LJA-Yi-CZD" id="Dhr-XB-SoK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="426" y="441"/>
         </scene>
     </scenes>
 </document>
