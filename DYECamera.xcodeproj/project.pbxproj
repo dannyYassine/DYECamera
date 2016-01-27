@@ -487,7 +487,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dannyyassine.DYECamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c3bd9f9d-3f31-48b2-95b7-8dfc2f7a6adc";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -496,14 +496,14 @@
 			baseConfigurationReference = 153A3A56C5B4F84C4542EACE /* Pods-DYECamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Danny Yassine (H5653SU33H)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Danny Yassine (H5653SU33H)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				INFOPLIST_FILE = DYECamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dannyyassine.DYECamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c3bd9f9d-3f31-48b2-95b7-8dfc2f7a6adc";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
