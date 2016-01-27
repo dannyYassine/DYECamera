@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08F823777116A92B989E3EC3 /* libPods-DYECamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE19FBE75784AE121A79CD4 /* libPods-DYECamera.a */; };
 		B56890561C318800006A5ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56890551C318800006A5ABC /* AppDelegate.swift */; };
 		B568905B1C318800006A5ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56890591C318800006A5ABC /* Main.storyboard */; };
 		B568905D1C318800006A5ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B568905C1C318800006A5ABC /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153A3A56C5B4F84C4542EACE /* Pods-DYECamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYECamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYECamera/Pods-DYECamera.release.xcconfig"; sourceTree = "<group>"; };
+		920A99B926AE77D9EAA1F6DA /* Pods-DYECamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYECamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYECamera/Pods-DYECamera.debug.xcconfig"; sourceTree = "<group>"; };
 		B56890521C318800006A5ABC /* DYECamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYECamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56890551C318800006A5ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B568905A1C318800006A5ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		B56890771C318800006A5ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56890831C318872006A5ABC /* DYECameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYECameraButton.swift; sourceTree = "<group>"; };
 		B56890851C318A3B006A5ABC /* DYECameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYECameraViewController.swift; sourceTree = SOURCE_ROOT; };
+		EEE19FBE75784AE121A79CD4 /* libPods-DYECamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYECamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F823777116A92B989E3EC3 /* libPods-DYECamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27D6EE37227DA02F4095BD7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				920A99B926AE77D9EAA1F6DA /* Pods-DYECamera.debug.xcconfig */,
+				153A3A56C5B4F84C4542EACE /* Pods-DYECamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B56890491C318800006A5ABC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +97,8 @@
 				B56890691C318800006A5ABC /* DYECameraTests */,
 				B56890741C318800006A5ABC /* DYECameraUITests */,
 				B56890531C318800006A5ABC /* Products */,
+				27D6EE37227DA02F4095BD7E /* Pods */,
+				C457B7A83FB7BA90CD16AD4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +144,14 @@
 			path = DYECameraUITests;
 			sourceTree = "<group>";
 		};
+		C457B7A83FB7BA90CD16AD4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEE19FBE75784AE121A79CD4 /* libPods-DYECamera.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B568907A1C318801006A5ABC /* Build configuration list for PBXNativeTarget "DYECamera" */;
 			buildPhases = (
+				DED312C7B677600CFDD87121 /* Check Pods Manifest.lock */,
 				B568904E1C318800006A5ABC /* Sources */,
 				B568904F1C318800006A5ABC /* Frameworks */,
 				B56890501C318800006A5ABC /* Resources */,
+				C7056AF13223AA88F759CFDD /* Embed Pods Frameworks */,
+				9E087317458911D6FDE83433 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E087317458911D6FDE83433 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYECamera/Pods-DYECamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7056AF13223AA88F759CFDD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYECamera/Pods-DYECamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED312C7B677600CFDD87121 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B568904E1C318800006A5ABC /* Sources */ = {
@@ -401,6 +476,7 @@
 		};
 		B568907B1C318801006A5ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920A99B926AE77D9EAA1F6DA /* Pods-DYECamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DYECamera/Info.plist;
@@ -412,6 +488,7 @@
 		};
 		B568907C1C318801006A5ABC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153A3A56C5B4F84C4542EACE /* Pods-DYECamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DYECamera/Info.plist;
@@ -488,6 +565,7 @@
 				B568907C1C318801006A5ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B568907D1C318801006A5ABC /* Build configuration list for PBXNativeTarget "DYECameraTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +574,7 @@
 				B568907F1C318801006A5ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B56890801C318801006A5ABC /* Build configuration list for PBXNativeTarget "DYECameraUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +583,7 @@
 				B56890821C318801006A5ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
